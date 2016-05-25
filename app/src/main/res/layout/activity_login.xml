@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.firefield.praesidium.Login">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/B1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:layout_above="@+id/B1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Registrtation Details"
+    android:id="@+id/T1"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Name"
+    android:id="@+id/T2"
+    android:layout_marginTop="35dp"
+    android:layout_below="@+id/T1"
+    android:layout_marginLeft="5dp"
+    android:layout_alignParentStart="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:text="Name"
+    android:ems="10"
+    android:id="@+id/ET1"
+    android:layout_marginTop="35dp"
+    android:layout_alignBottom="@+id/T2"
+    android:layout_alignParentEnd="true"
+    android:layout_alignLeft="@+id/T4"
+    android:layout_alignStart="@+id/T4" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="IMEI"
+    android:id="@+id/T3"
+    android:layout_alignTop="@+id/T4"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Large Text"
+    android:id="@+id/T4"
+    android:layout_below="@+id/ET1"
+    android:layout_alignLeft="@+id/ET2"
+    android:layout_alignStart="@+id/ET2"
+    android:layout_marginTop="40dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Phone no"
+    android:id="@+id/T5"
+    android:layout_alignBaseline="@+id/ET2"
+    android:layout_marginTop="32dp"
+    android:layout_alignBottom="@+id/ET2"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="phone"
+    android:ems="10"
+    android:id="@+id/ET2"
+    android:text="+91 9015..."
+    android:layout_marginTop="32dp"
+    android:layout_below="@+id/T4"
+    android:layout_toRightOf="@+id/T6"
+    android:layout_toEndOf="@+id/T6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Trusted contact no "
+            android:id="@+id/T6"
+            android:layout_below="@+id/T5"
+            android:layout_marginTop="32dp"
+            android:layout_toLeftOf="@+id/ET4"
+            android:layout_toStartOf="@+id/ET4" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="phone"
+    android:ems="10"
+    android:id="@+id/ET3"
+    android:layout_below="@+id/ET2"
+    android:layout_marginTop="32dp"
+    android:layout_alignRight="@+id/ET2"
+    android:layout_alignEnd="@+id/ET2"
+    android:layout_toRightOf="@+id/T6"
+    android:layout_toEndOf="@+id/T6"
+    android:text="+91 9015.." />
+
+
+        <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Personal text"
+    android:id="@+id/T7"
+            android:layout_below="@+id/T6"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textMultiLine"
+    android:ems="10"
+    android:id="@+id/ET4"
+    android:layout_below="@+id/ET3"
+    android:layout_marginTop="32dp"
+    android:layout_alignBottom="@+id/T7"
+    android:layout_toRightOf="@+id/T7"
+    android:layout_toEndOf="@+id/T7" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Stop Text"
+    android:id="@+id/T8"
+    android:layout_below="@+id/T7"
+    android:layout_marginTop="32dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textMultiLine"
+    android:ems="10"
+    android:id="@+id/ET5"
+    android:layout_below="@+id/T7"
+    android:layout_toEndOf="@+id/T7"
+    android:layout_marginTop="28dp" />
+
+    </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/B1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
